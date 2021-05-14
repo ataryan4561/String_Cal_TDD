@@ -10,6 +10,7 @@ public class test
 
     private StringCalculator calculator;
 
+    
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
