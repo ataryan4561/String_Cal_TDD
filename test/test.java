@@ -10,7 +10,7 @@ public class test
 
     private StringCalculator calculator;
 
-    
+
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
@@ -39,7 +39,7 @@ public class test
     @Test
     public void numbersNewlineDelimitedSummed() {
         assertEquals(calculator.add("1\n2"), 3);
-        assertEquals(calculator.add("11\n13"), 24);
+        assertEquals(calculator.add("14\n16"), 30);
     }
 
     @Test
@@ -58,7 +58,7 @@ public class test
 
     @Test
     public void GreaterThan1000() {
-        assertEquals(calculator.add("5,12,1001"), 17);
-        assertEquals(calculator.add("14124,22\n4,1214"), 26);
+        assertEquals(calculator.add("5,13,1005"), 18);
+        assertEquals(calculator.add("141241,22\n10,11114"), 32);
     }
 }
